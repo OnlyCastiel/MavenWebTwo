@@ -1,7 +1,7 @@
 package com.maofengqiang.domain;
 
 public class Student {
-	private String StudentNumber;
+	private String studentNumber;
 	private String name;
 	private String sex;
 	private String idCard;
@@ -10,10 +10,10 @@ public class Student {
 	
 	
 	public String getStudentNumber() {
-		return StudentNumber;
+		return studentNumber;
 	}
 	public void setStudentNumber(String studentNumber) {
-		StudentNumber = studentNumber;
+		this.studentNumber = studentNumber;
 	}
 	public String getName() {
 		return name;
@@ -47,7 +47,7 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student [StudentNumber=" + StudentNumber + ", name=" + name
+		return "Student [studentNumber=" + studentNumber + ", name=" + name
 				+ ", sex=" + sex + ", idCard=" + idCard + ", grade=" + grade
 				+ ", majorClass=" + majorClass + "]";
 	}

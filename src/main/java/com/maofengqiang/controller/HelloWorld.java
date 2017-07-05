@@ -10,4 +10,9 @@ public class HelloWorld {
 	public String getPage(){
 		return "success";
 	}
+	
+	@RequestMapping(value="chat")
+	public String startChat(){
+		return "chat";
+	}
 }

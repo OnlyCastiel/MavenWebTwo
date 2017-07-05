@@ -6,7 +6,7 @@
 
 
 	<resultMap type="com.maofengqiang.domain.Student" id="StudentResult">
-		<id property="StudentNumber" column="stu_no"/>
+		<id property="studentNumber" column="stu_no"/>
 		<result property="name" column="stu_name"/>
 		<result property="sex" column="sex"/>
 		<result property="idCard" column="id_card"/>
@@ -16,6 +16,10 @@
 
 	<select id="getStudentByStudentNumber" parameterType="String" resultMap="StudentResult">
 		select * from student_base_info where stu_no = #{studentNum}
+	</select>
+
+	<select id="getStudentByStudentName" parameterType="String" resultMap="StudentResult">
+		select * from student_base_info where stu_name = #{name}
 	</select>
 
 	<select id="getStudentByStudentIdCard" parameterType="String" resultMap="StudentResult">
