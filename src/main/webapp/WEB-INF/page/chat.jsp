@@ -4,31 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="<%=request.getContextPath() %>/WEB-INF/js/jquery-3.2.1.js" type="text/javascript" charset="UTF-8"></script>
-<script src="/WEB-INF/js/jquery-3.2.1.js" type="text/javascript" charset="UTF-8"></script>
-<script src="jquery-3.2.1.js" type="text/javascript" charset="UTF-8"></script>
-<script src="../js/jquery-3.2.1.js" type="text/javascript" charset="UTF-8"></script>
-
-
+<script src="<%=request.getContextPath()%>/js/jquery-3.2.1.js" type="text/javascript" charset="UTF-8"></script>
 <title>Insert title here</title>
 </head>
+    <title>Apache Tomcat WebSocket Examples: Chat</title>
 <body>
 	<div>
-		<input type="button" id="btnConnection" value="连接" /> <input
-			type="button" id="btnClose" value="关闭" /> <input type="button"
-			id="btnSend" value="发送" />
+		<input type="button" id="btnConnection" value="连接" />
+		<input type="button" id="btnClose" value="关闭" />
+		<input type="button" id="btnSend" value="发送" />
+		<input type="button" id="confirm" value="确认功能">
 	</div>
-
-	<script type="text/javascript" >
 	
-	
-		$(docunment).ready(function() {
-			alert("jquery有效1");
-		});
 
-		$(function() {
-			alert("jquery有效");
-		});
-	</script>
+<script src="<%=request.getContextPath()%>/js/chat.js" type="text/javascript" charset="UTF-8"></script>
+	
 </body>
 </html>

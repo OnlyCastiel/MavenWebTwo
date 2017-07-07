@@ -15,4 +15,14 @@ public class HelloWorld {
 	public String startChat(){
 		return "chat";
 	}
+	
+	@RequestMapping(value="webChat")
+	public String startWebChat(){
+		return "webChat";
+	}
+	
+	@RequestMapping(value="restful")
+	public String restfulAPI(){
+		return "restful";
+	}
 }

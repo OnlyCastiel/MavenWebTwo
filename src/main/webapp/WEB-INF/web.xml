@@ -17,8 +17,7 @@
 		<url-pattern>*.htm</url-pattern>
 		<url-pattern>*.swf</url-pattern>
 	</servlet-mapping>
-
-<!-- 	<mvc:resources mapping="/js/**" location="/js/" />    -->
+		
 
 	<!-- 配置web.xml，使其具有springmvc特性，主要配置两处，一个是ContextLoaderListener，一个是DispatcherServlet -->
 	<context-param>
