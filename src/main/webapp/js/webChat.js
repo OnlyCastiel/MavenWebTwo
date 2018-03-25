@@ -33,9 +33,9 @@ Chat.connect = (function(host) {
 
 Chat.initialize = function() {
 	if (window.location.protocol == 'http:') {
-		Chat.connect('ws://' + window.location.host + '/MavenWebTwo/webChat');
+		Chat.connect('ws://' + window.location.host + '/webChat');
 	} else {
-		Chat.connect('wss://' + window.location.host + '/MavenWebTwo/webChat');
+		Chat.connect('wss://' + window.location.host + '/webChat');
 	}
 };
 
