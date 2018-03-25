@@ -13,7 +13,7 @@ if (typeof (WebSocket) == "undefined") {
 
 $("#btnConnection").click(function() {
 	//实现化WebSocket对象，指定要连接的服务器地址与端口
-	socket = new WebSocket("ws://localhost:8080/MavenWebTwo/push");
+	socket = new WebSocket("ws://localhost:8080/push");
 	//打开事件
 	socket.onopen = function() {
 		alert("Socket 已打开");
