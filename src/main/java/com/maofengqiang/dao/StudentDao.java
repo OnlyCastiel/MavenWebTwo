@@ -1,11 +1,14 @@
 package com.maofengqiang.dao;
 
 import com.maofengqiang.domain.Student;
+import org.springframework.stereotype.Repository;
 
+
+@Repository
 public interface StudentDao {
-	public Student getStudentByStudentNumber(String studentNum);
+    Student getStudentByStudentNumber(String studentNum);
 	
-	public Student getStudentByStudentName(String name);
+    Student getStudentByStudentName(String name);
 	
-	public Student getStudentByStudentIdCard(String id);
+    Student getStudentByStudentIdCard(String id);
 }

@@ -10,21 +10,22 @@ import com.maofengqiang.service.StudentService;
 @Service
 public class StudentServiceImpl implements StudentService {
 
-	@Autowired StudentDao studentdao;
+	@Autowired
+    StudentDao studentDao;
 	
 	@Override
 	public Student getStudentByStudentNumber(String studentNum) {
-		return studentdao.getStudentByStudentNumber(studentNum);
+		return studentDao.getStudentByStudentNumber(studentNum);
 	}
 	
 	@Override
 	public Student getStudentByStudentName(String name) {
-		return studentdao.getStudentByStudentName(name);
+		return studentDao.getStudentByStudentName(name);
 	}
 
 	@Override
 	public Student getStudentByStudentIdCard(String id) {
-		return studentdao.getStudentByStudentIdCard(id);
+		return studentDao.getStudentByStudentIdCard(id);
 	}
 
 }
