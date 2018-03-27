@@ -1,7 +1,7 @@
 $("#get").click(function(){
 	$.ajax({
         type: "GET",
-        url: "/MavenWebTwo/student/2011221102110106",
+        url: "http://hehehe.com/student/2011221102110106",
         async:"false",
 //        data: {username:$("#username").val(), content:$("#content").val()},
         dataType: "json",
@@ -17,7 +17,7 @@ $("#get").click(function(){
 $("#put").click(function(){
 	$.ajax({
         type: "PUT",
-        url: "/MavenWebTwo/student",
+        url: "/student",
         async:"false",
 //        data: {username:$("#username").val(), content:$("#content").val()},
         dataType: "text",
@@ -32,7 +32,7 @@ $("#put").click(function(){
 $("#delete").click(function(){
 	$.ajax({
         type: "DELETE",
-        url: "/MavenWebTwo/student/刘佳丽",
+        url: "/student/刘佳丽",
         async:"false",
 //        data: {username:$("#username").val(), content:$("#content").val()},
         dataType: "text",
@@ -45,8 +45,8 @@ $("#delete").click(function(){
 
 $("#post").click(function(){
 	$.ajax({
-        type: "POST",
-        url: "/MavenWebTwo/student",
+        type: "post",
+        url: "http://hehehe.com/student",
         async:"false",
 //        data: {username:$("#username").val(), content:$("#content").val()},
         dataType: "text",

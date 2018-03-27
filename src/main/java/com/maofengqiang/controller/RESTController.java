@@ -20,8 +20,10 @@ public class RESTController {
 	public Student getbyName(@PathVariable("studentNun")String studentNun){
 		//具体代码略
 		System.out.println("接收到Get请求");
-		Student stu = null;
-		stu=studentServiceImpl.getStudentByStudentNumber(studentNun);
+/*		Student stu = null;
+		stu=studentServiceImpl.getStudentByStudentNumber(studentNun);*/
+        Student stu = new Student();
+        stu.setName("张三");
 		return stu;
 	}
 	
